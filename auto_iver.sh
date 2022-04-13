@@ -64,6 +64,7 @@ for file in *; do
             pwd_subofsub=`pwd`;
             
             cd */ > /dev/null || true;
+            
             eval 'find . -type f -iname "*.zip" -exec unzip -q -o {} \;'
             eval 'find . -type f -iname "*.rar" -exec unrar -idq -o+ e {}  \;'
             
