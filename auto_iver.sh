@@ -29,9 +29,9 @@ VERILOG_TB_MODULES="/home/shc/264odev1/tb_isim_sifrele.v";
 
 IVERILOG_EXEC="tb_sim";
 
-IVER_CMD="$IVERILOG_PATH $VERILOG_MODULES $VERILOG_TB_MODULES -o $IVERILOG_EXEC";
-
 ############################################# DEGISTIRMENIZ GEREKEN DEGISKENLERIN SONU
+
+IVER_CMD="$IVERILOG_PATH $VERILOG_MODULES $VERILOG_TB_MODULES -o $IVERILOG_EXEC";
 
 for file in *; do
     # Uzaktan indirilen her klasorde isim yaziyor, burada ismi basiyorum.
