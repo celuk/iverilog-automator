@@ -7,3 +7,16 @@ sudo apt install iverilog
 sudo apt install unzip
 sudo apt install unrar
 ```
+
+
+## Running Script
+```bash
+cd {your-folder-with-subdirectories-to-test}
+{your-folder-to-location-of-auto_iver}/auto_iver
+```
+
+e.g.:
+```bash
+cd /home/shc/odevler
+/home/shc/iverilog-automator/auto_iver
+```
