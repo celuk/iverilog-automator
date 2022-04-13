@@ -12,11 +12,13 @@ sudo apt install unrar
 ## Running Script
 ```bash
 cd {your-folder-with-subdirectories-to-test}
+chmod +x {your-folder-to-location-of-auto_iver}/auto_iver
 {your-folder-to-location-of-auto_iver}/auto_iver
 ```
 
 e.g.:
 ```bash
 cd /home/shc/odevler
+chmod +x /home/shc/iverilog-automator/auto_iver
 /home/shc/iverilog-automator/auto_iver
 ```
