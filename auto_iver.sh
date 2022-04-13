@@ -35,9 +35,9 @@ IVER_CMD="$IVERILOG_PATH $VERILOG_MODULES $VERILOG_TB_MODULES -o $IVERILOG_EXEC"
 
 for file in *; do
     # Uzaktan indirilen her klasorde isim yaziyor, burada ismi basiyorum.
-    echo "--------------------"; 
+    echo -e "\033[1;33m--------------------";
     echo $file | sed 's/_.*//';
-    echo "--------------------";
+    echo -e "--------------------\033[0m";
 
     # O kisinin klasorune gidiyorum.
     cd "$file";
