@@ -1,7 +1,6 @@
 #!/bin/bash
 
 PWD_MAIN=`pwd`
-
 cd "$PWD_MAIN";
 
 # DIKKAT!
@@ -11,6 +10,9 @@ cd "$PWD_MAIN";
 # iverilog hepsinin onune port direction istiyor yani su sekilde olmali:
 # input [1:0] in1, input [1:0] in2
 # bu yuzden buradan gecmeyenleri vivadoda bir kez daha kontrol etmeniz iyi olabilir
+
+############################################# DEGISTIRMENIZ GEREKEN DEGISKENLER
+
 IVERILOG_PATH="iverilog";
 
 # Test edeceginiz moduller
@@ -28,6 +30,8 @@ VERILOG_TB_MODULES="/home/shc/264odev1/tb_isim_sifrele.v";
 IVERILOG_EXEC="tb_sim";
 
 IVER_CMD="$IVERILOG_PATH $VERILOG_MODULES $VERILOG_TB_MODULES -o $IVERILOG_EXEC";
+
+############################################# DEGISTIRMENIZ GEREKEN DEGISKENLERIN SONU
 
 for file in *; do
     # Uzaktan indirilen her klasorde isim yaziyor, burada ismi basiyorum.
