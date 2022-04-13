@@ -56,7 +56,7 @@ module tb_isim_sifrele(
       $display("Testbench Point: %.0f", 20*total_passed/(total_passed + total_failed));
      
       if(total_passed == 5)
-     	  $display("ALL PASSED!");
+        $display("ALL PASSED!");
       else begin
         $display("Total Passed: %d", total_passed);
         $display("Total Failed: %d", total_failed);
